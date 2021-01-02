@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './Pages/login/login.component';
-import { SuccessComponent } from './pages/success/success.component';
+import { LoginComponent } from './component/login/login.component';
+import { SuccessComponent } from './component/success/success.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SuccessComponent } from './pages/success/success.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [
     LoginService

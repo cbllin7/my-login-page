@@ -1,5 +1,5 @@
-import { SuccessComponent } from './Pages/success/success.component';
-import { LoginComponent } from './Pages/login/login.component';
+import { SuccessComponent } from './component/success/success.component';
+import { LoginComponent } from './component/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
