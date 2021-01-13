@@ -1,18 +1,18 @@
 <div class="container">
     <header>
-        <h3>Login:</h3>
+        <h3>Please Login</h3>
     </header>
-    <form>
+    <form [formGroup]="frm" (submit)="login()"> 
         <div class="row">
             <div class="col-sm-4 form-group">
-                    <label for="username" >Username:</label>
-                    <input name="username" type="text" class="form-control" [(ngModel)]="username">
+                    <label for="username" >Username</label>
+                    <input name="username" type="text" class="form-control" formControlName="username">
             </div>
             <div class="col-sm-4 form-group">
-                    <label for="password">Password:</label>
-                    <input name="password" type="text" class="form-control" [(ngModel)]="password">
+                    <label for="password">Password</label>
+                    <input name="password" type="text" class="form-control" formControlName="password">
             </div>
         </div>
-        <button class="col-1 btn btn-success" type="button" (click)="login(username, password)">Login</button>
+        <button class="col-1 btn btn-success" type="submit">Login</button>
     </form>
     </div>
